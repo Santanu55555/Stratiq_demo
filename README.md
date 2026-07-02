@@ -2,13 +2,13 @@
 
 **Live site:** [stratiq.webyor.com](https://stratiq.webyor.com)
 
-**Product name:** Stratiq Analytics (internal/repo codename: *Insightify*)
+**Product name:** Stratiq 
 
 > A multi-tenant, AI-powered marketing analytics platform — built end-to-end (frontend, backend, database, background workers, deployment). This README is a **portfolio/interview reference**: it documents the architecture, engineering decisions, and problems solved, without exposing the actual source code, which is kept private.
 
 ---
 
-## 📌 What This Project Is
+##  What This Project Is
 
 Stratiq lets marketing teams drop in a messy CSV/Excel export (ad spend, leads, revenue, campaign data) and turns it into normalized KPIs, dashboards, and AI-generated insights — including a conversational "chat with your data" analyst. It's built as a real multi-tenant SaaS product: workspaces, roles, billing, and premium tiers, not a single-user demo.
 
@@ -18,7 +18,7 @@ Stratiq lets marketing teams drop in a messy CSV/Excel export (ad spend, leads, 
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -42,7 +42,7 @@ Stratiq lets marketing teams drop in a messy CSV/Excel export (ad spend, leads, 
 
 ---
 
-## 🏛️ Architecture Highlights
+##  Architecture Highlights
 
 ### Multi-Tenancy & RBAC
 A two-level hierarchy — **Workspace** (the tenant: billing, roles, audit logs) containing **Projects** (grouped datasets) — with three roles (`OWNER`, `ANALYST`, `VIEWER`) enforced on every data-access route. New signups are auto-provisioned a default workspace and project so they can start uploading data with zero setup screens.
